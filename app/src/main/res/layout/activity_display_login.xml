@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DisplayLogin"
+    android:background="@drawable/shape_backgroud_purple">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="75dp">
+
+        <ImageView
+            android:id="@+id/imagem_logo_login"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:src="@drawable/gif_input_login" />
+
+        <EditText
+            android:id="@+id/input_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/imagem_logo_login"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/shape_bordas_redondas"
+            android:paddingLeft="10dp"
+            android:inputType="textPersonName"
+            android:textCursorDrawable="@drawable/cursor_login"
+            android:hint="Digite o nome de usuario ou E-mail"
+            android:textSize="15sp"
+            android:textColorHint="@color/purple_200"
+            android:layout_marginTop="25dp"
+            android:textColor="@color/purple_700" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/input_login"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/shape_bordas_redondas"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:id="@+id/input_senha"
+            android:inputType="textPassword"
+            android:hint="Digite a senha"
+            android:textColorHint="@color/purple_200"
+            android:textCursorDrawable="@drawable/cursor_login"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/purple_700"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/input_senha"
+            android:gravity="center">
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Entrar"
+                android:background="@drawable/shape_bordas_redondas"
+                android:id="@+id/button_login"
+                android:layout_marginVertical="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Esqueceu sua senha? clique aqui"
+                android:layout_below="@id/button_login"
+                android:gravity="center"
+                android:id="@+id/link_redefinir_senha"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/link_redefinir_senha"
+                android:gravity="center"
+                android:layout_marginVertical="20dp"
+                android:id="@+id/separadorTelaCadastro"
+                android:text="-------------------- ou ------------------------"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_marginLeft="45dp"
+                android:layout_marginRight="45dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:text="Cadastre-se"
+                android:background="@drawable/shape_bordas_redondas"
+                android:id="@+id/button_cadastro"
+                android:layout_below="@id/separadorTelaCadastro" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

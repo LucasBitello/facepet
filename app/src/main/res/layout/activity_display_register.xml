@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape_backgroud_purple">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+       <ImageView
+           android:layout_width="match_parent"
+           android:layout_height="130dp"
+           android:layout_gravity="center"
+           android:id="@+id/img_gif_cadastro" />
+
+        <TextView
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="Cadastre-se agora para curtir seus pets mais amados."
+            android:textStyle="bold"
+            android:textSize="20sp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Cadastre-se com o facebook"
+            android:textSize="13sp"
+            android:background="@drawable/shape_bordas_redondas"
+            android:id="@+id/button_cadastro_facebbok"
+            android:drawableLeft="@drawable/ic_icon_facebook"
+            android:layout_marginTop="25dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/link_redefinir_senha"
+            android:gravity="center"
+            android:layout_marginVertical="25dp"
+            android:id="@+id/separadorTelaCadastro"
+            android:text="-------------------- ou crie sua conta ------------------------"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_below="@id/input_login"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/shape_bordas_redondas"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:id="@+id/nome_pet"
+            android:inputType="textPassword"
+            android:hint="Digite o nome do seu pet"
+            android:textColorHint="@color/purple_200"
+            android:textCursorDrawable="@drawable/cursor_login"
+            android:textColor="@color/purple_700"/>
+
+        <EditText
+            android:id="@+id/input_login"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/shape_bordas_redondas"
+            android:paddingLeft="10dp"
+            android:inputType="textPersonName"
+            android:textCursorDrawable="@drawable/cursor_login"
+            android:hint="Digite um nome de usuário ou E-mail"
+            android:textSize="15sp"
+            android:textColorHint="@color/purple_200"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/purple_700" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:background="@drawable/shape_bordas_redondas"
+            android:paddingLeft="10dp"
+            android:textSize="15sp"
+            android:id="@+id/input_senha"
+            android:inputType="textPassword"
+            android:hint="Crie uma senha"
+            android:textColorHint="@color/purple_200"
+            android:textCursorDrawable="@drawable/cursor_login"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/purple_700"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_marginLeft="45dp"
+            android:layout_marginRight="45dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Cadastre-se"
+            android:textSize="13sp"
+            android:background="@drawable/shape_bordas_redondas"
+            android:id="@+id/button_criar_usuario"
+            android:layout_marginTop="25dp"/>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
